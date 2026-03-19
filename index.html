@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stark Sites</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family:'Inter', sans-serif;
+  background: radial-gradient(circle at top, #0f0f1a, #000);
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* NAV */
+nav {
+  position:fixed;
+  width:100%;
+  top:0;
+  padding:15px 20px;
+  backdrop-filter: blur(10px);
+  display:flex;
+  justify-content:space-between;
+  z-index:999;
+}
+
+.logo {
+  font-family:'Orbitron';
+  color:#fff;
+  text-shadow:0 0 10px #00d4ff;
+}
+
+/* HERO */
+.hero {
+  padding:100px 20px 40px;
+  text-align:center;
+}
+
+.container {
+  max-width:600px;
+  margin:0 auto;
+}
+
+.hero h1 {
+  font-family:'Orbitron';
+  font-size:2.5rem;
+  background:linear-gradient(45deg,#00d4ff,#ffffff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero p {
+  margin-top:15px;
+  color:#ccc;
+  font-size:1.1rem;
+}
+
+/* BOTÕES */
+.btns {
+  margin-top:20px;
+}
+
+.btn {
+  display:block;
+  margin:10px auto;
+  padding:12px 20px;
+  border-radius:25px;
+  text-decoration:none;
+  width:fit-content;
+  font-weight:500;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background:linear-gradient(45deg,#00d4ff,#ffffff);
+  color:#000;
+}
+
+.primary:hover {
+  transform:scale(1.05);
+  box-shadow:0 0 15px #00d4ff;
+}
+
+.secondary {
+  border:2px solid #00d4ff;
+  color:#00d4ff;
+}
+
+.secondary:hover {
+  background:#00d4ff;
+  color:#000;
+}
+
+/* ELEMENTO VISUAL */
+.hero-img {
+  margin:40px auto;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  background:radial-gradient(circle,#00d4ff33,#000);
+  animation:float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+  50% {transform:translateY(-10px);}
+}
+
+/* SECTION */
+.section {
+  padding:50px 20px;
+  text-align:center;
+}
+
+.section h2 {
+  font-family:'Orbitron';
+  margin-bottom:20px;
+}
+
+/* CARDS */
+.grid {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:15px;
+}
+
+.card {
+  width:100%;
+  max-width:350px;
+  background:#111;
+  padding:20px;
+  border-radius:10px;
+  border:1px solid #222;
+}
+
+/* TESTE / PROVAS SOCIAIS */
+.testimonials {
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-top:20px;
+}
+
+.testimonial {
+  background:#111;
+  padding:15px;
+  border-radius:10px;
+  border-left:4px solid #00d4ff;
+  text-align:left;
+}
+
+/* CTA */
+.cta {
+  padding:60px 20px;
+  text-align:center;
+}
+
+.cta a {
+  display:block;
+  margin:10px auto;
+  background:#00d4ff;
+  color:#fff;
+  padding:12px 20px;
+  border-radius:25px;
+  text-decoration:none;
+  width:fit-content;
+  transition: all 0.3s ease;
+}
+
+.cta a:hover {
+  transform:scale(1.05);
+  box-shadow:0 0 15px #00d4ff;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Stark Sites</div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+
+    <h1>Sites que refletem a sua marca</h1>
+
+    <p>
+      Transformamos sua presença online em páginas modernas, confiáveis e que despertam curiosidade nos clientes.
+    </p>
+
+    <div class="btns">
+      <a href="https://wa.me/SEUNUMERO" class="btn primary">Solicite sua avaliação gratuita</a>
+      <a href="https://wa.me/SEUNUMERO" class="btn secondary">Descubra como podemos impulsionar seu negócio</a>
+    </div>
+
+    <div class="hero-img"></div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Por que ter um site?</h2>
+
+  <div class="grid">
+    <div class="card">Fortalece sua presença online</div>
+    <div class="card">Transmite credibilidade e profissionalismo</div>
+    <div class="card">Conecta você diretamente aos clientes</div>
+    <div class="card">Soluções simples e inteligentes</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>O que dizem nossos clientes</h2>
+
+  <div class="testimonials">
+    <div class="testimonial">"Meu site ficou incrível e os clientes perceberam a diferença!" – Lu, salão local</div>
+    <div class="testimonial">"Profissionalismo e rapidez. Superou minhas expectativas!" – Pedro, petshop</div>
+    <div class="testimonial">"Valeu cada minuto! Recomendado para qualquer negócio." – Ana, boutique</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Como funciona</h2>
+  <p>Conte sua necessidade → Receba sua página → Surpreenda seus clientes.</p>
+</section>
+
+<section class="section">
+  <h2>Planos</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Site Básico</h3>
+      <p>Avaliação gratuita incluída. Experimente nossa qualidade antes de decidir.</p>
+      <p>💡 Uma surpresa: valor acessível, personalizado para você!</p>
+    </div>
+
+    <div class="card">
+      <h3>Site Profissional</h3>
+      <p>Design premium, integrações inteligentes e toque único da Stark Sites.</p>
+      <p>💡 Descubra seu potencial: seu investimento será menor do que imagina!</p>
+    </div>
+
+    <div class="card">
+      <h3>Site Avançado</h3>
+      <p>Animações suaves, experiência completa e presença digital reforçada.</p>
+      <p>💡 Avalie e descubra o valor real para o seu negócio.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Pronto para ver seu site em ação?</h2>
+  <a href="https://wa.me/SEUNUMERO">Solicite sua avaliação agora</a>
+</section>
+
+</body>
+</html>
