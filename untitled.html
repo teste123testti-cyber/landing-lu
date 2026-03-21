@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salão de Beleza - Lu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+    overflow-x:hidden;
+}
+
+body{
+    color:#fff;
+    background:#0b0f1a;
+    overflow-x:hidden;
+}
+
+/* FUNDO */
+body::before{
+    content:'';
+    position:fixed;
+    inset:0;
+    background:
+    linear-gradient(rgba(11,15,26,0.9), rgba(11,15,26,0.95)),
+    url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
+    background-size:cover;
+    background-position:center;
+    z-index:-2;
+}
+
+body::after{
+    content:'';
+    position:fixed;
+    inset:0;
+    backdrop-filter:blur(6px);
+    z-index:-1;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:50px 0;
+    text-align:center;
+}
+
+/* TOPO */
+.brand{
+    font-size:2.4rem;
+    font-weight:700;
+    margin-bottom:8px;
+    color:#ff4da6;
+}
+
+.hours{
+    font-size:0.95rem;
+    opacity:0.7;
+    margin-bottom:15px;
+}
+
+/* ANIMAÇÕES */
+.fade-left,.fade-right,.fade-up{
+    opacity:0;
+    transition:0.8s ease;
+}
+.fade-left{transform:translateX(-40px);}
+.fade-right{transform:translateX(40px);}
+.fade-up{transform:translateY(30px);}
+.show{
+    opacity:1;
+    transform:translate(0);
+}
+
+/* TEXTOS */
+h1{font-size:2rem; margin-bottom:10px;}
+h2{
+    margin-bottom:15px;
+    color:#ff4da6;
+}
+p{opacity:0.85;}
+
+/* CARDS */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    padding:18px;
+    width:240px;
+    border:1px solid rgba(255,77,166,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    box-shadow:0 0 20px rgba(255,77,166,0.25);
+}
+
+/* BOTÕES */
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 22px;
+    border-radius:25px;
+    background:rgba(255,77,166,0.12);
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    border:1px solid rgba(255,77,166,0.25);
+    transition:0.25s;
+}
+
+.btn:hover{
+    background:rgba(255,77,166,0.22);
+    box-shadow:0 0 10px rgba(255,77,166,0.25);
+    transform:translateY(-1px);
+}
+
+.btn:active{
+    transform:scale(0.97);
+}
+
+.btn-outline{
+    background:transparent;
+}
+
+/* DIVISOR */
+.divider{
+    height:1px;
+    background:rgba(255,77,166,0.2);
+    margin:20px auto;
+    width:80%;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container fade-left">
+
+    <div class="brand">NOME DO SALÃO</div>
+    <div class="hours">Segunda a segunda • 08h às 20h</div>
+
+    <h1>Transforme seu visual com quem realmente entende de beleza</h1>
+    <p>Atendimento completo com atenção em cada detalhe</p>
+
+    <a class="btn" href="https://wa.me/5511984057097">Agendar horário</a>
+    <a class="btn btn-outline" href="https://wa.me/5511984057097">Tirar dúvidas</a>
+</div>
+
+<div class="divider"></div>
+
+<div class="container fade-right">
+    <p>
+    Cada cliente recebe um atendimento personalizado,
+    focado em valorizar sua beleza e trazer mais confiança no dia a dia.
+    </p>
+</div>
+
+<div class="divider"></div>
+
+<div class="container">
+    <h2 class="fade-left">Serviços</h2>
+
+    <div class="cards">
+        <div class="card fade-up">Corte feminino</div>
+        <div class="card fade-up">Corte masculino</div>
+        <div class="card fade-up">Química em geral</div>
+        <div class="card fade-up">Penteados</div>
+    </div>
+
+    <a class="btn" href="https://wa.me/5511984057097">Agendar serviço</a>
+</div>
+
+<div class="divider"></div>
+
+<div class="container">
+    <h2 class="fade-right">O que estão dizendo</h2>
+
+    <div class="cards">
+        <div class="card fade-up">Atendimento incrível, super recomendo</div>
+        <div class="card fade-up">Ambiente muito bom e profissional</div>
+        <div class="card fade-up">Resultado melhor do que eu esperava</div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="container fade-left">
+    <h2>Localização</h2>
+    <p>
+    Rua Manuel Pereira Madruga, 287<br>
+    Jardim Centenário – São Paulo
+    </p>
+
+    <a class="btn" href="https://maps.app.goo.gl/x3THZ53yqCWCmx5B9?g_st=aw" target="_blank">
+        Ver no mapa
+    </a>
+</div>
+
+<div class="container fade-up">
+    <a class="btn" href="https://wa.me/5511984057097">
+        Entrar em contato agora
+    </a>
+</div>
+
+<script>
+const elements = document.querySelectorAll('.fade-left, .fade-right, .fade-up');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
